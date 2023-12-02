@@ -31,4 +31,5 @@ def part2(fh):
 def test(filename):
     with open(filename) as fh:
         print(part1(fh.read().strip().split('\n')))
+    with open(filename) as fh:
         print(part2(fh.read().strip().split('\n')))
