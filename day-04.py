@@ -17,7 +17,6 @@ def part1(fh):
     return card_sum
 
 def part2(fh):
-    cards = 0
     copies = [1 for _ in range(len(fh))]
     for game, line in enumerate(fh):
         split_line = line.split("|")
@@ -27,7 +26,6 @@ def part2(fh):
         matches = 0 
         for num in your_nums:
             if num in winning_nums:
-                cards += copies[game]
                 matches += 1
         
         for i in range(1, matches + 1):
