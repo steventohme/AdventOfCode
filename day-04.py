@@ -35,9 +35,6 @@ def part2(fh):
     return sum(copies)
         
             
-        
-
-
 
 def test(filename):
     with open(filename) as fh:
